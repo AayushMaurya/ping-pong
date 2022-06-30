@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2 player ping-pong game</title>
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-
+<link rel="stylesheet" href="./css/form.css">
 <body>
-    <div class="container1">
-        <div id="ball"></div>
-        <div id="paddle1" class="paddle"></div>
-        <div id="paddle2" class="paddle"></div>
-    </div>
-    <div id="winner">
-    </div>
-    <button id="restart" onClick="window.location.reload();">Restart</button>
-    
+    <form class="form" action="/play.html">
+        <div class="title">Welcome</div>
+        <div class="subtitle">Let's join a chat room</div>
+        <div class="input-container ic1">
+          <input id="displayName" class="input" type="text" name="displayName" placeholder=" " />
+          <div class="cut"></div>
+          <label for="displayname" class="placeholder">Display name</label>
+        </div>
+        
+        <div class="input-container ic2">
+          <input id="roomName" class="input" type="text" name="roomName" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="roomname" class="placeholder">Room Name</label>
+        </div>
+        <button type="submit" class="submit">Enter</button>
+    </form>
 </body>
-
 </html>
